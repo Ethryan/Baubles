@@ -207,6 +207,15 @@ public class InventoryBaubles implements IInventory {
 		if (i == 3
 				&& ((IBauble) stack.getItem()).getBaubleType(stack) == BaubleType.BELT)
 			return true;
+		if (i == 4
+				&& ((IBauble) stack.getItem()).getBaubleType(stack) == BaubleType.HEAD)
+			return true;
+		if (i == 5
+				&& ((IBauble) stack.getItem()).getBaubleType(stack) == BaubleType.BODY)
+			return true;
+		if ((i == 6 || i == 7)
+				&& ((IBauble) stack.getItem()).getBaubleType(stack) == BaubleType.CHARM)
+			return true;
 		return false;
 	}
 
