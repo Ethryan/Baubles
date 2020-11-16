@@ -39,7 +39,7 @@ public class ContainerPlayerExpanded extends Container
         	baubles.stackList = PlayerHandler.getPlayerBaubles(player).stackList;
         }
         
-        this.addSlotToContainer(new SlotCrafting(playerInv.player, this.craftMatrix, this.craftResult, 0, 144, 36));
+        this.addSlotToContainer(new SlotCrafting(playerInv.player, this.craftMatrix, this.craftResult, 0, 154, 28));
         int i;
         int j;
 
@@ -71,6 +71,10 @@ public class ContainerPlayerExpanded extends Container
         this.addSlotToContainer(new SlotBauble(baubles,BaubleType.RING,1,80,8 + 1 * 18));
         this.addSlotToContainer(new SlotBauble(baubles,BaubleType.RING,2,80,8 + 2 * 18));
         this.addSlotToContainer(new SlotBauble(baubles,BaubleType.BELT,3,80,8 + 3 * 18));
+	this.addSlotToContainer(new SlotBauble(baubles,BaubleType.HEAD,4,98,8 + 0 * 18));
+	this.addSlotToContainer(new SlotBauble(baubles,BaubleType.BODY,4,98,8 + 1 * 18));
+	this.addSlotToContainer(new SlotBauble(baubles,BaubleType.CHARM,4,98,8 + 2 * 18));
+	this.addSlotToContainer(new SlotBauble(baubles,BaubleType.CHARM,4,98,8 + 3 * 18));
 
         for (i = 0; i < 3; ++i)
         {
